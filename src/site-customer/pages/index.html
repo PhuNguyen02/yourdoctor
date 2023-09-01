@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="site-customer\styles\reset\reset.css" />
+    <!-- css header -->
+    <link rel="stylesheet" type="text/css" href="site-customer\styles\header\header.css" />
+    <!-- css menu bar -->
+    <link rel="stylesheet" type="text/css" href="site-customer\styles\menubar\menubar.css" />
+    <!-- css banner -->
+    <link rel="stylesheet" type="text/css" href="site-customer\styles\banner\banner.css" />
+    <!-- css product list -->
+    <link rel="stylesheet" type="text/css" href="site-customer\styles\card\bestsellercard.css" />
+    <!-- css favourite brand -->
+    <link rel="stylesheet" type="text/css"
+    href="site-customer\styles\favourite-brand\banner-brand-ads\banner-brand.css" />
+    <link rel="stylesheet" type="text/css"
+    href="site-customer\styles\favourite-brand\featured-brand-product\brand-product.css" />
+    <!-- css footer -->
+    <link rel="stylesheet" type="text/css" href="site-customer\styles\footer\footer.css" />
+    <!-- css main -->
+    <link rel="stylesheet" type="text/css" href="site-customer\pages\homepage.css" />
+    <script src="site-customer\pages\index.js"></script>
+    <script src="site-customer\js\banner\slider-banner.js"></script>
+    <script src="site-customer\js\setUser\setUser.js"></script>
+    <script src="site-customer\js\logout\logout.js"></script>
+    <script src="site-customer\js\productCards\productList.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div include-html="site-customer\components\organisms\header\index.html"></div>
+    <!-- main -->
+    <div class="body-container">
+        <div class="wrapper">
+            <!-- menubar -->
+            <div include-html="site-customer\components\molecules\menubar\menubar.html"></div>
+            <div class="heading-container">
+                <div class="main-container">
+                    <div class="header-main">
+                        <!-- slider - banner -->
+                        <div include-html="site-customer\components\molecules\banner\banner.html"></div>
+
+                        <div class="header-main-rightside">
+                            <div class="symptom-link">
+                                <a href=""><img src="/assets/img/benh-thuong-gap.webp" alt=""></a>
+                            </div>
+                            <div class="quick-access">
+                                <a href="" class="item-suggest">
+                                    <div class="item-suggest-img">
+                                        <img src="/assets/img/can_mua_thuoc.webp" alt="">
+                                    </div>
+                                    <div class="itemm-suggest-text">
+                                        <p>Phòng khám quanh đây</p>
+                                    </div>
+                                </a>
+                                <a href="" class="item-suggest">
+                                    <div class="item-suggest-img">
+                                        <img src="/assets/img/tu_van_voi_duoc_sy.webp" alt="">
+                                    </div>
+                                    <div class="itemm-suggest-text">
+                                        <p>Tư vấn dược sỹ</p>
+                                    </div>
+                                </a>
+                                <a href="" class="item-suggest">
+                                    <div class="item-suggest-img">
+                                        <img src="/assets/img/tim_nha_thuoc_gan_day.webp" alt="">
+                                    </div>
+                                    <div class="itemm-suggest-text">
+                                        <p>Nhà thuốc gần đây</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-list-container">
+                <!-- best-seller-cards -->
+                <div include-html="site-customer\components\molecules\cards\bestsellercard.html"></div>
+        
+            <div class="health-checkup-container">
+                <div class="health-checkup">
+                    <div class="health-check-left-content">
+                        <div class="health-check-header">
+                            <h2>Kiểm tra sức khoẻ</h2>
+                        </div>
+                        <div class="check-item">
+                            <div class="check-card">
+                                <img src="/assets/img/tim_mach.webp" alt="">
+                                <div class="health-check-content">
+                                    <div class="health-check-name">
+                                        <p>Kiểm tra nguy cơ mắc bệnh tim</p>
+                                    </div>
+                                    <div class="health-check-btn">
+                                        <a href="">Kiểm tra</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check-card">
+                                <img src="/assets/img/da_day.webp" alt="">
+                                <div class="health-check-content">
+                                    <div class="health-check-name">
+                                        <p>Kiểm tra nguy cơ mắc bệnh dạ dày</p>
+                                    </div>
+                                    <div class="health-check-btn">
+                                        <a href="">Kiểm tra</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check-card">
+                                <img src="/assets/img/sa_sut_tri_tue.webp" alt="">
+                                <div class="health-check-content">
+                                    <div class="health-check-name">
+                                        <p>Kiểm tra nguy cơ sa sút trí tuệ</p>
+                                    </div>
+                                    <div class="health-check-btn">
+                                        <a href="">Kiểm tra</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="health-check-right-content">
+                        <img src="/assets/img/kiemtrasuckhoe.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- favourite-brand -->
+            <div class="brand-container">
+                <div class="brand-container-header">
+                    <img src="/assets/img/item2.webp" alt="">
+                    <h2>Thương hiệu yêu thích</h2>
+                </div>
+                <div class="brand-body">
+                    <!-- banner-brand -->
+                    <div
+                        include-html="site-customer\components\molecules\favourite-brand\banner-brand-ads\banner-brand.html">
+                    </div>
+                    <!-- brand-product -->
+                    <div
+                        include-html="site-customer\components\molecules\favourite-brand\featured-brand-product\brand-product.html">
+                    </div>
+                </div>
+            </div>
+            <div class="feature-category-container">
+                <div class="feature-category-header">
+                    <img src="/assets/img/item3.webp" alt="">
+                    <h2>Danh mục nổi bật</h2>
+                </div>
+                <div class="category-list">
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/than_kinh_nao.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Thần kinh não</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>75 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/tpcn_vitamin_khoang_chat_.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Vitamin khoáng chất</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>25 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/suc_khoe_tim_mach.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Sức khoẻ tim mạch</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>145 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/tang_suc_de_khang_mien_dich.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Tăng sức đề kháng, miễn dịch</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>91 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/ho_tro_tieu_hoa.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Hỗ trợ tiêu hoá</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>71 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/sinh_li_noi_tiet_to.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Sinh lý - nội tiết tố</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>71 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/dinh_duong_.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Dinh dưỡng</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>57 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/ho_tro_lam_dep.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Hỗ trợ làm đẹp</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>75 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/ho_tro_tinh_duc.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Hỗ trợ tình dục</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>75 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/cham_soc_da_mat.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Chăm sóc da mặt</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>75 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/than_kinh_nao.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Thần kinh não</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>75 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">
+                            <div class="item-img">
+                                <img src="/assets/img/giai_phap_lan_da.webp" alt="">
+                            </div>
+                            <div class="category-name">
+                                <p> Giải pháp làn da</p>
+                            </div>
+                            <div class="quantity-product">
+                                <p>75 sẩn phẩm</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- <div class="yourdoctor-chat">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chatbot-btn">
+                        <h3>Your Doctor</h3>
+                    </div>
+                    <div class="pharmacist-chat">
+                        <h3>Dược sỹ</h3>
+                    </div>
+                    <div class="close-btn">
+                        <h3>Đóng</h3>
+                    </div>
+                </div>
+                <div class="chat-body">
+                    <div class="chat-output">
+                        <p>Hôm nay bạn thế nào ?</p>
+                    </div>
+                    <div class="chat-input">
+                        <p>Tôi bị đau đầu</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-- footer -->
+    <div include-html="site-customer\components\organisms\footer\index.html"></div>
+</body>
+<script>
+    includeHTML();
+</script>
+
+
+</html>

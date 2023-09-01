@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="..\..\styles\reset\reset.css" />
+    <!-- css header -->
+    <link rel="stylesheet" type="text/css" href="..\..\styles\header\header.css" />
+    <link rel="stylesheet" type="text/css" href="..\..\styles\footer\footer.css" />
+    <link rel="stylesheet" type="text/css" href="..\..\styles\menubar\menubar.css" />
+
+    <link rel="stylesheet" type="text/css" href="..\..\styles\cart\cart.css" />
+    <link rel="stylesheet" type="text/css" href="..\..\styles\editaccount\editaccont.css" />
+    
+    <script src="..\index.js"></script>
+    <script src="..\..\js\setUser\setUser.js"></script>
+    <script src="..\..\js\logout\logout.js"></script>
+
+    <script src="..\..\js\cart\cart.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div include-html="..\..\components\organisms\header\index.html"></div>
+
+    <div include-html="..\..\components\molecules\menubar\menubar.html"></div>
+
+    <!-- main -->
+    <div include-html="..\..\components\molecules\edit\editProfile.html"></div>
+
+    <div include-html="..\..\components\organisms\footer\index.html"></div>
+    
+</body>
+<script>
+    includeHTML();
+</script>
+
+</html>

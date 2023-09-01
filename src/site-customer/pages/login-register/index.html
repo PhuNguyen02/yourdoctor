@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="..\..\styles\reset\reset.css" />
+    <link rel="stylesheet" type="text/css" href="..\..\styles\login-register\login-reg.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="..\..\js\login-reg\transition\log-reg-transition.js"></script>
+    <script src="..\..\js\login-reg\validate\validate-register.js"></script>
+    <script src="..\..\js\login-reg\validate\validate-login.js"></script>
+    <script src="..\..\pages\index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="cover">
+                <img src="/assets/img/login.png" alt="">
+            </div>
+            <div class="login-form">
+                <div class="logo">
+                    <img src="/assets/img/LogoDO.png" alt="">
+                </div>
+                <div class="title">
+                        <h2>Đăng nhập</h2>
+                </div>
+                <form action="" id="login-form">
+                    <div class="form-control">
+                        <input type="email" name="email" id="login-email" placeholder="Email" >
+                        <small></small>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="pswd" id="login-pswd" placeholder="Password" >
+                        <small></small>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="login-btn">Đăng nhâp</button>
+                    </div>
+                    <div class="forgot-pass">
+                        <div class="remember">
+                            <input type="checkbox" >Ghi nhớ mật khẩu
+                        </div>
+                        <div class="forgot">
+                            <a href="#">Quên mật khẩu?</a>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <span>Hoặc</span>
+                    </div>
+                    <div class="link">
+                        <p>Bạn chưa có tài khoản? <a  class="register-link">Đăng ký</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="register-container">
+            <div class="register-form">
+                <div class="logo">
+                    <img src="/assets/img/LogoDO.png" alt="">
+                </div>
+                <div class="title">
+                        <h2>Đăng ký</h2>
+                </div>
+                <form action="" id="signUp-form">
+                    <div class="form-control ">
+                        <input type="text" name="txt" id="sign-name" placeholder="Họ tên đầy đủ">
+                        <small></small>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" id="sign-email" placeholder="Email của bạn"> 
+                        <small></small>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="pswd" id="sign-pswd" placeholder="Mật khẩu">
+                        <small></small>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="pswd" id="sign-rpswd" placeholder="Nhập lại mật khẩu">
+                        <small></small>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="SignUp-btn">Đăng ký</button>
+                    </div>
+                    <div class="line">
+                        <span>Hoặc</span>
+                    </div>
+                    <div  class="link">
+                        <p>Bạn đã có tài khoản? <a class="login-link">Đăng nhập</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="cover">
+                <img src="/assets/img/login.png" alt="">
+            </div>
+        </div>
+
+
+        
+    </div>
+
+</body>
+</html>

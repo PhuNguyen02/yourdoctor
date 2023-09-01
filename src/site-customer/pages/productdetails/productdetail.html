@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="..\..\styles\reset\reset.css" />
+    <!-- css header -->
+    <link rel="stylesheet" type="text/css" href="..\..\styles\header\header.css" />
+    <link rel="stylesheet" type="text/css" href="..\..\styles\footer\footer.css" />
+    <link rel="stylesheet" type="text/css" href="..\..\styles\menubar\menubar.css" />
+
+    <link rel="stylesheet" type="text/css" href="..\..\styles\detailProduct\detailProduct.css" />
+    <script src="..\index.js"></script>
+    <script src="..\..\js\setUser\setUser.js"></script>
+    <script src="..\..\js\logout\logout.js"></script>
+
+    <script src="..\..\js\detailProduct\detailproduct.js"></script>
+
+</head>
+<body>
+      <!-- header -->
+      <div include-html="..\..\components\organisms\header\index.html"></div>
+    <div include-html="..\..\components\molecules\menubar\menubar.html"></div>
+      
+      <!-- main -->
+      <div class="container">
+        <!-- Mô tả Chi tiết sản phẩm -->
+      <div include-html="..\..\components\molecules\productinfo\productinfo.html"></div>
+        
+        <!-- Mô tả thông tin dược sĩ -->
+      <div include-html="..\..\components\molecules\pharmacistinfo\pharmacistinfo.html"></div>
+        
+        <!-- Mô tả sản phẩm -->
+        <div class="product-description">
+            <div class="heading-description">
+                <h3>Mô tả sản phẩm</h3>
+            </div>
+            <div class="product-des-content">
+                <span>
+                    <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nulla consequuntur magni, similique sunt error fuga earum natus culpa corrupti mollitia reprehenderit consectetur non autem accusamus commodi unde facilis quidem.
+                    </p>
+                </span>
+
+            </div>
+        </div>
+        <!-- Đánh giá sản phẩm -->
+        <div class="productReview">
+            <div class="productReview-heading">
+                <h2>Đánh giá sản phẩm</h2>
+                <span>(0 đánh giá)</span>
+            </div>
+            <form action="#">
+                <div class="rating">
+                    <input type="number" name="rating" hidden>
+                    <i class='bx bx-star star' style="--i: 0;"></i>
+                    <i class='bx bx-star star' style="--i: 1;"></i>
+                    <i class='bx bx-star star' style="--i: 2;"></i>
+                    <i class='bx bx-star star' style="--i: 3;"></i>
+                    <i class='bx bx-star star' style="--i: 4;"></i>
+                </div>
+                <textarea name="opinion" placeholder="Nhập nội dung đánh giá( không bắt buộc)"></textarea>
+                <div class="btn-group">
+                    <button type="submit" class="btn submit">Gửi đánh giá</button>
+                    <!-- <button class="btn cancel">Cancel</button> -->
+                </div>
+            </form>
+            <div class="view-rating" >
+                <div class="filter-review">
+                    <span>Lọc theo: </span>
+                    <div class="button-filter">
+                        <button class="active">5 sao</button>
+                        <button>4 sao</button>
+                        <button>3 sao</button>
+                        <button>2 sao</button>
+                        <button>1 sao</button>
+                    </div>
+                </div>
+                <div class="show-review-comment">
+                    <p>Chưa có đánh giá nào</p>
+                </div>
+            </div>
+        </div>
+        <!-- Bình luận -->
+    </div>
+    <div include-html="..\..\components\organisms\footer\index.html"></div>
+
+</body>
+<script>
+    includeHTML();
+</script>
+</html>
